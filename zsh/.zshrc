@@ -33,14 +33,14 @@ source ~/.python3/bin/activate
 # starship prompt
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
+if [[ "$OS_TYPE" == "Darwin" ]]; then
 # zsh-autosuggestions
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # zsh-syntax-highlighting
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # zsh-vi-mode
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+fi
 
 #========================================================================
 # alias
