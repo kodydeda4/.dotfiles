@@ -22,8 +22,6 @@ if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
   export PATH=`gem environment gemdir`/bin:$PATH
 fi
 
-# python
-source ~/.python3/bin/activate
 
 # # gh cli 
 # eval "$(~/.local/bin/mise activate zsh)"
@@ -33,13 +31,13 @@ source ~/.python3/bin/activate
 # starship prompt
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
+# macOS
 if [[ "$OS_TYPE" == "Darwin" ]]; then
-# zsh-autosuggestions
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-# zsh-syntax-highlighting
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# zsh-vi-mode
-source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+  # zsh
+  source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+  source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+  source ~/.python3/bin/activate
 fi
 
 #========================================================================
