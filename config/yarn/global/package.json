@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "create-next-app": "^14.2.3",
+    "tslib": "^2.8.1"
+  }
+}

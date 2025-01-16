@@ -1,0 +1,17 @@
+[flavor]
+# dark = "onedark"
+dark = "tokyo-night"
+light = "catppuccin-latte"
+# dark = "moonfly"
+# dark = "nightfly"
+
+[icon]
+prepend_dirs = [
+  { name = "kodydeda", text = "" },
+  { name = "Applications", text = "󰕰"},
+  { name = "Developer", text = "󰣪" },
+  { name = "Downloads", text = "" },
+  { name = "Pictures", text = "" },
+  { name = "Music", text = "󰝚" },
+]
+
