@@ -33,7 +33,6 @@ export STARSHIP_CONFIG=~/.config/starship/starship.toml
 
 # macOS
 if [[ "$(uname)" == "Darwin" ]]; then
-  echo "macOS"
   # zsh
   source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
   source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
