@@ -76,7 +76,7 @@ alias sw="cd ~/Developer/kody/swift; r"
 alias web="cd ~/Developer/kody/web; r"
 
 # swift-format
-alias fpr="swiftformat ~/Developer/kody/swift-new/swift-camera-app; ~/Developer/pocketradar/ios-sports-app; swiftformat ~/Developer/pocketradar/sports; swiftformat ~/Developer/kody/swift/swift-fitness-app; swiftformat ~/Developer/deda-inc/flashcards"
+alias fpr="swiftformat ~/Developer/kody/swift/swift-camera-app; ~/Developer/pocketradar/ios-sports-app; swiftformat ~/Developer/pocketradar/sports; swiftformat ~/Developer/kody/swift/swift-fitness-app; swiftformat ~/Developer/deda-inc/flashcards"
 alias ff="fastfetch --logo small"
 
 #========================================================================
