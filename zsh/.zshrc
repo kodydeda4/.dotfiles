@@ -58,8 +58,6 @@ alias pp="neofetch"
 alias tt="smassh"
 alias xwal="/opt/xcwal/; python3 xcwal.py"
 alias icons="sudo -H ~/.iconsur.sh"
-alias disablescreenshotshadows="defaults write com.apple.screencapture disable-shadow -bool true"
-alias enablescreenshotshadows="defaults write com.apple.screencapture disable-shadow -bool false"
 alias bonsai="cbonsai --seed 119 --live"
 
 # apps
@@ -74,6 +72,7 @@ alias pr="cd ~/Developer/pocketradar; r"
 alias site="cd /Users/kodydeda/Developer/kody/web/nextjs-kodydeda; r"
 alias sw="cd ~/Developer/kody/swift; r"
 alias web="cd ~/Developer/kody/web; r"
+alias sss="~/.dotfiles/zsh/sss"
 
 # swift-format
 alias fpr="swiftformat ~/Developer/kody/swift/swift-camera-app; ~/Developer/pocketradar/ios-sports-app; swiftformat ~/Developer/pocketradar/sports; swiftformat ~/Developer/kody/swift/swift-fitness-app; swiftformat ~/Developer/deda-inc/flashcards"
