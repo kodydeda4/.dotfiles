@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# SwiftFormat
+
+swiftformat ~/Developer/kody/swift/swift-camera-app
+swiftformat ~/Developer/pocketradar/ios-sports-app
+swiftformat ~/Developer/pocketradar/sports
+swiftformat ~/Developer/kody/swift/swift-fitness-app

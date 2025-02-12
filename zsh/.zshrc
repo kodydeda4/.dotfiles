@@ -64,6 +64,7 @@ alias bonsai="cbonsai --seed 119 --live"
 alias gg="lazygit"
 alias wals="cd /Users/kodydeda/Library/Mobile\ Documents/com~apple~CloudDocs/Photos/Wallpapers; r"
 alias notes="cd /Users/kodydeda/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/iCloud; nvim ."
+alias ff="fastfetch --logo small"
 
 ## cd alias
 alias dev="cd ~/Developer; r"
@@ -72,11 +73,10 @@ alias pr="cd ~/Developer/pocketradar; r"
 alias site="cd /Users/kodydeda/Developer/kody/web/nextjs-kodydeda; r"
 alias sw="cd ~/Developer/kody/swift; r"
 alias web="cd ~/Developer/kody/web; r"
-alias sss="~/.dotfiles/zsh/sss"
 
-# swift-format
-alias fpr="swiftformat ~/Developer/kody/swift/swift-camera-app; ~/Developer/pocketradar/ios-sports-app; swiftformat ~/Developer/pocketradar/sports; swiftformat ~/Developer/kody/swift/swift-fitness-app; swiftformat ~/Developer/deda-inc/flashcards"
-alias ff="fastfetch --logo small"
+## scripts
+alias sss="~/.dotfiles/zsh/sss"
+alias fpr="~/.dotfiles/zsh/fpr"
 
 #========================================================================
 # zoxide

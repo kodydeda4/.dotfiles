@@ -1,11 +1,14 @@
 # ghostty
 theme = dark:oled-rose-pine,light:catppuccin-latte
+#theme = dark:UnderTheSea,light:catppuccin-latte
 font-family = MesloLGS NF
 font-size = 14
 background-opacity = 0.9
 background-blur-radius = 20
 unfocused-split-opacity = 0.75
 confirm-close-surface = false
+window-width = 100
+window-height = 30
 
 # keybindings
 keybind = cmd+shift+equal=increase_font_size:1
