@@ -187,45 +187,45 @@ run = "layout floating"
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
     # alt-slash = 'layout tiles horizontal vertical'
     # alt-comma = 'layout accordion horizontal vertical'
-    ctrl-alt-cmd-space = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+    ctrl-alt-cmd-shift-space = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#focus
-    ctrl-alt-cmd-h = 'focus left'
-    ctrl-alt-cmd-j = 'focus down'
-    ctrl-alt-cmd-k = 'focus up'
-    ctrl-alt-cmd-l = 'focus right'
+    ctrl-alt-cmd-shift-h = 'focus left'
+    ctrl-alt-cmd-shift-j = 'focus down'
+    ctrl-alt-cmd-shift-k = 'focus up'
+    ctrl-alt-cmd-shift-l = 'focus right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move
-    ctrl-alt-cmd-shift-h = 'move left'
-    ctrl-alt-cmd-shift-j = 'move down'
-    ctrl-alt-cmd-shift-k = 'move up'
-    ctrl-alt-cmd-shift-l = 'move right'
+    alt-h = 'move left'
+    alt-j = 'move down'
+    alt-k = 'move up'
+    alt-l = 'move right'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#resize
-    ctrl-alt-cmd-shift-y = 'resize smart -50'
-    ctrl-alt-cmd-shift-o = 'resize smart +50'
+    alt-minus = 'resize smart -50'
+    alt-equal = 'resize smart +50'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-    ctrl-alt-cmd-1 = 'workspace 1'
-    ctrl-alt-cmd-2 = 'workspace 2'
-    ctrl-alt-cmd-3 = 'workspace 3'
-    ctrl-alt-cmd-4 = 'workspace 4'
-    ctrl-alt-cmd-5 = 'workspace 5'
-    ctrl-alt-cmd-6 = 'workspace 6'
-    ctrl-alt-cmd-7 = 'workspace 7'
-    ctrl-alt-cmd-8 = 'workspace 8'
-    ctrl-alt-cmd-9 = 'workspace 9'
+    ctrl-alt-cmd-shift-1 = 'workspace 1'
+    ctrl-alt-cmd-shift-2 = 'workspace 2'
+    ctrl-alt-cmd-shift-3 = 'workspace 3'
+    ctrl-alt-cmd-shift-4 = 'workspace 4'
+    ctrl-alt-cmd-shift-5 = 'workspace 5'
+    ctrl-alt-cmd-shift-6 = 'workspace 6'
+    ctrl-alt-cmd-shift-7 = 'workspace 7'
+    ctrl-alt-cmd-shift-8 = 'workspace 8'
+    ctrl-alt-cmd-shift-9 = 'workspace 9'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-    ctrl-alt-cmd-shift-1 = 'move-node-to-workspace 1'
-    ctrl-alt-cmd-shift-2 = 'move-node-to-workspace 2'
-    ctrl-alt-cmd-shift-3 = 'move-node-to-workspace 3'
-    ctrl-alt-cmd-shift-4 = 'move-node-to-workspace 4'
-    ctrl-alt-cmd-shift-5 = 'move-node-to-workspace 5'
-    ctrl-alt-cmd-shift-6 = 'move-node-to-workspace 6'
-    ctrl-alt-cmd-shift-7 = 'move-node-to-workspace 7'
-    ctrl-alt-cmd-shift-8 = 'move-node-to-workspace 8'
-    ctrl-alt-cmd-shift-9 = 'move-node-to-workspace 9'
+    alt-1 = 'move-node-to-workspace 1'
+    alt-2 = 'move-node-to-workspace 2'
+    alt-3 = 'move-node-to-workspace 3'
+    alt-4 = 'move-node-to-workspace 4'
+    alt-5 = 'move-node-to-workspace 5'
+    alt-6 = 'move-node-to-workspace 6'
+    alt-7 = 'move-node-to-workspace 7'
+    alt-8 = 'move-node-to-workspace 8'
+    alt-9 = 'move-node-to-workspace 9'
 
     # # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     # alt-tab = 'workspace-back-and-forth'
@@ -235,10 +235,7 @@ run = "layout floating"
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     # alt-cmd-semicolon = 'mode service'
 
-    ctrl-alt-cmd-shift-r = 'reload-config'
-
-    ctrl-alt-cmd-shift-f = 'fullscreen --no-outer-gaps'
-    #ctrl-alt-cmd-space = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+    ctrl-alt-cmd-r = 'reload-config'
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
