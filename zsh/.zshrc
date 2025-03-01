@@ -57,7 +57,6 @@ alias p="pfetch"
 alias pp="neofetch"
 alias tt="smassh"
 alias xwal="/opt/xcwal/; python3 xcwal.py"
-alias icons="sudo -H ~/.iconsur.sh"
 alias bonsai="cbonsai --seed 119 --live"
 
 # apps
@@ -77,6 +76,7 @@ alias web="cd ~/Developer/kody/web; r"
 ## scripts
 alias sss="~/.dotfiles/zsh/sss"
 alias fpr="~/.dotfiles/zsh/fpr"
+alias icons="sudo -H ~/.dotfiles/zsh/icons"
 
 #========================================================================
 # zoxide
@@ -104,3 +104,4 @@ function r() {
 
 eval "$(starship init zsh)"
 export SPACESHIP_PROMPT_ASYNC=0
+eval "$(/opt/homebrew/bin/brew shellenv)"

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo iconsur set "/Users/kodydeda/Applications/Chrome Apps.localized/YouTube.app"
+
+
+
+sudo iconsur cache
