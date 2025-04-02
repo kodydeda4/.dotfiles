@@ -5,10 +5,13 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Caps Lock → Hyper Key (⌃⌥⇧⌘) | Escape if alone | Use fn + caps lock to enable caps lock",
+                        "description": "Caps Lock → Meh Key (⌃⌥⌘) (Caps Lock if alone)",
                         "manipulators": [
                             {
-                                "from": { "key_code": "caps_lock" },
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["caps_lock"] }
+                                },
                                 "to": [
                                     {
                                         "key_code": "left_command",
@@ -16,23 +19,6 @@
                                     }
                                 ],
                                 "to_if_alone": [{ "key_code": "escape" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Caps Lock → Meh Key (⌃⌥⌘) (ESC if alone)",
-                        "enabled": false,
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "caps_lock" },
-                                "to": [
-                                    {
-                                        "key_code": "left_command",
-                                        "modifiers": ["left_control", "left_option"]
-                                    }
-                                ],
-                                "to_if_alone": [{ "key_code": "caps_lock" }],
                                 "type": "basic"
                             }
                         ]
@@ -549,12 +535,6 @@
             ],
             "name": "Default profile",
             "selected": true,
-            "simple_modifications": [
-                {
-                    "from": { "key_code": "insert" },
-                    "to": [{ "key_code": "caps_lock" }]
-                }
-            ],
             "virtual_hid_keyboard": {
                 "country_code": 0,
                 "keyboard_type_v2": "ansi"

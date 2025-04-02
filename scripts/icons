@@ -1,7 +1,6 @@
 #!/bin/bash
 
 sudo iconsur set "/Users/kodydeda/Applications/Chrome Apps.localized/YouTube.app"
-
-
+sudo iconsur set "/Users/kodydeda/Applications/Chrome Apps.localized/JIRA.app"
 
 sudo iconsur cache

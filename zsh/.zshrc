@@ -49,7 +49,7 @@ alias conf="cd ~/.config; nvim ."
 alias h="history"
 alias cd="z"
 alias ci="zi"
-alias l="exa -lah"
+alias l="lsd"
 alias ls="lsd"
 alias src="source ~/.zshrc"
 alias nvim="nvim"
@@ -74,9 +74,9 @@ alias sw="cd ~/Developer/kody/swift; r"
 alias web="cd ~/Developer/kody/web; r"
 
 ## scripts
-alias sss="~/.dotfiles/zsh/sss"
-alias fpr="~/.dotfiles/zsh/fpr"
-alias icons="sudo -H ~/.dotfiles/zsh/icons"
+alias sss="~/.dotfiles/scripts/sss"
+alias fpr="~/.dotfiles/scripts/fpr"
+alias icons="sudo -H ~/.dotfiles/scripts/icons"
 
 #========================================================================
 # zoxide
