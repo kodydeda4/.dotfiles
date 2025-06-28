@@ -7,11 +7,9 @@
 # init
 #========================================================================
 
-# # pywal
-# (cat ~/.cache/wal/sequences &)
-
-# pfetch
+# # pywal (cat ~/.cache/wal/sequences &) pfetch
 fastfetch --logo small
+rich "$(gh api user -q .login) | switch with ghs" -p -a heavy
 
 # fzf
 eval "$(fzf --zsh)"
@@ -65,6 +63,9 @@ alias wals="cd /Users/kodydeda/Library/Mobile\ Documents/com~apple~CloudDocs/Pho
 alias notes="cd /Users/kodydeda/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/iCloud; nvim ."
 alias ff="fastfetch --logo small"
 
+# git
+alias ghs="gh auth switch"
+
 ## cd alias
 alias dev="cd ~/Developer; r"
 alias kody="cd ~/Developer/kody; r"
@@ -76,6 +77,7 @@ alias web="cd ~/Developer/kody/web; r"
 ## scripts
 alias sss="~/.dotfiles/scripts/sss"
 alias fpr="~/.dotfiles/scripts/fpr"
+alias xcm="~/.dotfiles/scripts/xcm"
 alias icons="sudo -H ~/.dotfiles/scripts/icons"
 
 #========================================================================
@@ -105,3 +107,6 @@ function r() {
 eval "$(starship init zsh)"
 export SPACESHIP_PROMPT_ASYNC=0
 eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"
+
