@@ -2,7 +2,10 @@
 
 # SwiftFormat
 
-swiftformat ~/Developer/kody/swift/swift-camera-app
-swiftformat ~/Developer/pocketradar/ios-sports-app
-swiftformat ~/Developer/pocketradar/sports
-swiftformat ~/Developer/kody/swift/swift-fitness-app
+# swiftformat ~/Developer/kody/swift/swift-camera-app
+# swiftformat ~/Developer/pocketradar/ios-sports-app
+# swiftformat ~/Developer/pocketradar/sports
+# swiftformat ~/Developer/kody/swift/swift-fitness-app
+swiftformat ~/Developer/foresightcares/swift-ava-app
+swiftformat ~/Developer/foresightcares/AVA-TCA-Demo
+# swiftformat ~/Developer/foresightcares/FSC_Native_iOS

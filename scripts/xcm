@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Check if a value was passed in
+if [ -z "$1" ]; then
+  echo "Usage: $0 [true|false]"
+  exit 1
+fi
+
+# Convert input to lowercase
+input=$(echo "$1" | tr '[:upper:]' '[:lower:]')
+
+if [ "$input" == "true" ]; then
+  defaults write com.apple.dt.Xcode IDEPackageEnablePrebuilts YES
+  echo "Set IDEPackageEnablePrebuilts to YES"
+elif [ "$input" == "false" ]; then
+  defaults write com.apple.dt.Xcode IDEPackageEnablePrebuilts NO
+  echo "Set IDEPackageEnablePrebuilts to NO"
+else
+  echo "Invalid input. Use 'true' or 'false'."
+  exit 1
+fi
+
