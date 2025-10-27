@@ -1,0 +1,176 @@
+matches:
+  
+  #---------------------------------------------------------------
+  # TCA
+  #---------------------------------------------------------------
+
+  - trigger: "clock()"
+    word: false
+    replace: "@Dependency(\\.continuousClock) var clock"
+
+  - trigger: "dismiss()"
+    word: false
+    replace: "@Dependency(\\.dismiss) var dismiss"
+
+  - trigger: "aws()"
+    word: false
+    replace: "@Dependency(\\.aws) var aws"
+
+  - trigger: "db()"
+    word: false
+    replace: "@Dependency(\\.defaultDatabase) var database"
+
+  - trigger: "rrn"
+    word: false
+    replace: "return .none"
+  
+  - trigger: "rr{"
+    word: false
+    replace: "return .run { send in\n"
+
+  - trigger: "rrd"
+    word: false
+    replace: "return .run { _ in await self.dismiss() }"
+
+  #---------------------------------------------------------------
+  # VStack
+  #---------------------------------------------------------------
+  - trigger: "VSA {"
+    word: false
+    replace: "VStack(alignment: .leading) {"
+
+  - trigger: "VSS {"
+    word: false
+    replace: "VStack(alignment: .leading, spacing: 16) {"
+
+  #---------------------------------------------------------------
+  # HStack
+  #---------------------------------------------------------------
+  - trigger: "HSS {"
+    word: false
+    replace: "HStack(alignment: .center, spacing: 16) {"
+
+  #---------------------------------------------------------------
+  # Image
+  #---------------------------------------------------------------
+  - trigger: ".rstf()"
+    word: false
+    replace: ".resizable()\n  .scaledToFit()\n  .frame(width: 30, height: 30)."
+    
+  #---------------------------------------------------------------
+  # .label()
+  #---------------------------------------------------------------
+  - trigger: "label()"
+    word: false
+    replace: "Label(\"Title\", systemImage: \"checkmark.circle.fill\")"
+    
+  #---------------------------------------------------------------
+  # .clipShape()
+  #---------------------------------------------------------------
+  - trigger: ".cls()"
+    word: false
+    replace: ".clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))"
+    
+  #---------------------------------------------------------------
+  # RoundedRectangle(cornerRadius: 12, style: .continuous)
+  #---------------------------------------------------------------
+  - trigger: "rr()"
+    word: false
+    replace: "RoundedRectangle(cornerRadius: 12, style: .continuous)"
+    
+  #---------------------------------------------------------------
+  # var body: some View { }
+  #---------------------------------------------------------------
+  - trigger: "var body"
+    word: false
+    replace: "var body: some View {\n"
+    
+  #---------------------------------------------------------------
+  # private func content() -> some View { }
+  #---------------------------------------------------------------
+  - trigger: "priview"
+    word: false
+    replace: "private func content() -> some View {\n}"
+    
+  #---------------------------------------------------------------
+  # .foregroundColor(
+  #---------------------------------------------------------------
+  - trigger: ".fg()"
+    word: false
+    replace: ".foregroundColor(.secondary)"
+    
+  #---------------------------------------------------------------
+  # .background(
+  #---------------------------------------------------------------
+  - trigger: ".bg()"
+    word: false
+    replace: ".background(Color(.systemGray6))"
+
+  #---------------------------------------------------------------
+  # .buttonStyle(...)
+  #---------------------------------------------------------------
+  - trigger: ".bsp()"
+    word: false
+    replace: ".buttonStyle(.plain)"
+    
+  #---------------------------------------------------------------
+  # .frame(...)
+  #---------------------------------------------------------------
+  - trigger: ".fl()"
+    word: false
+    replace: ".frame(maxWidth: .infinity, alignment: .leading)"
+
+  - trigger: ".fr()"
+    word: false
+    replace: ".frame(maxWidth: .infinity, alignment: .trailing)"
+
+  - trigger: ".ft()"
+    word: false
+    replace: ".frame(maxHeight: .infinity, alignment: .top)"
+
+  - trigger: ".fb()"
+    word: false
+    replace: ".frame(maxWidth: .infinity, alignment: .bottom)"
+
+  - trigger: ".mw()"
+    word: false
+    replace: ".frame(maxWidth: .infinity)"
+
+  - trigger: ".mh()"
+    word: false
+    replace: ".frame(maxHeight: .infinity)"
+
+  - trigger: ".mwh()"
+    word: false
+    replace: ".frame(maxWidth: .infinity, maxHeight: .infinity)"
+
+  #---------------------------------------------------------------
+  # padding(...)
+  #---------------------------------------------------------------
+  - trigger: ".pdd()"
+    word: false
+    replace: ".padding()"
+
+  - trigger: ".pt()"
+    word: false
+    replace: ".padding(.top)"
+
+  - trigger: ".pb()"
+    word: false
+    replace: ".padding(.bottom)"
+
+  - trigger: ".pl()"
+    word: false
+    replace: ".padding(.leading)"
+
+  - trigger: ".pr()"
+    word: false
+    replace: ".padding(.trailing)"
+
+  - trigger: ".ph()"
+    word: false
+    replace: ".padding(.horizontal)"
+
+  - trigger: ".pv()"
+    word: false
+    replace: ".padding(.vertical)"
