@@ -127,6 +127,7 @@ keymap = [
 	{ on = [ "g", "h" ],       run = "cd ~",             desc = "Go home" },
 	{ on = [ "g", "c" ],       run = "cd ~/.dotfiles/config",     desc = "Goto ~/.dotfiles/config" },
 	{ on = [ "g", "d" ],       run = "cd ~/Developer",   desc = "Goto ~/Developer" },
+	{ on = [ "g", "m" ],       run = "cd ~/Music/Kody/",   desc = "Goto ~/Music/Kody/" },
 	{ on = [ "g", "k" ],       run = "cd ~/Developer/kody/swift/",   desc = "Goto ~/Developer/kody/swift/" },
 	{ on = [ "g", "p" ],       run = "cd ~/Developer/pocketradar/ios-sports-app/",   desc = "Goto ~/Developer/pocketradar/ios-sports-app" },
 	{ on = [ "g", "<Space>" ], run = "cd --interactive", desc = "Jump interactively" },

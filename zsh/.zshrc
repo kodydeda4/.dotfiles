@@ -9,7 +9,8 @@
 
 # # pywal (cat ~/.cache/wal/sequences &) pfetch
 fastfetch --logo small
-rich "$(gh api user -q .login) | switch with ghs" -p -a heavy
+#rich "$(gh api user -q .login) | switch with ghs" -p -a heavy
+echo "$(gh api user -q .login) | switch with ghs"
 
 # fzf
 eval "$(fzf --zsh)"
@@ -49,6 +50,7 @@ alias cd="z"
 alias ci="zi"
 alias l="lsd"
 alias ls="lsd"
+alias ll="lsd -lah"
 alias src="source ~/.zshrc"
 alias nvim="nvim"
 alias p="pfetch"
@@ -62,6 +64,23 @@ alias gg="lazygit"
 alias wals="cd /Users/kodydeda/Library/Mobile\ Documents/com~apple~CloudDocs/Photos/Wallpapers; r"
 alias notes="cd /Users/kodydeda/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/iCloud; nvim ."
 alias ff="fastfetch --logo small"
+alias mm="~/.cargo/bin/rmpc"
+alias speed="speedtest-cli --simple"
+
+# Download Music
+
+youtube-dl() {
+  yt-dlp -f bestaudio \
+    --extract-audio --audio-format m4a --audio-quality 0 \
+    --embed-metadata --embed-thumbnail --convert-thumbnails jpg \
+    -o "$HOME/Music/Downloads/youtube-dl/%(playlist_title,NA)s/%(track_number,00)02d - %(title)s.%(ext)s" "$1"
+}
+
+# alias youtube-dl="youtube-dl"
+alias youtube-music-dl="ytmdl"
+alias tidal-dl="cd; tidal-dl"
+alias tidal-dl-converter="~/.dotfiles/scripts/tidal-dl-converter"
+
 
 # git
 alias ghs="gh auth switch"

@@ -1,5 +1,5 @@
-# ghostty
-theme = dark:oled-rose-pine,light:catppuccin-latte
+# ghostty.
+theme = dark:oled-rose-pine,light:catppuccin-latte.conf
 #theme = dark:UnderTheSea,light:catppuccin-latte
 font-family = MesloLGS NF
 font-size = 14

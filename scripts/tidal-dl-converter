@@ -1,0 +1,16 @@
+#!/bin/bash
+
+shopt -s nullglob
+
+for file in *.m4a *.flac; do
+  base="${file%.*}"
+  if [[ $file == *.flac ]]; then
+    echo "Converting FLAC -> ALAC: $file"
+    ffmpeg -y -i "$file" -c:a alac -vn "${base}_apple.m4a"
+  elif [[ $file == *.m4a ]]; then
+    echo "Re-encoding AAC: $file"
+    ffmpeg -y -i "$file" -c:a aac -b:a 256k -vn "${base}_apple.m4a"
+  fi
+done
+
+

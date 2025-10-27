@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo iconsur set "/Users/kodydeda/Applications/Brave Browser Apps.localized/JIRA.app/"
+sudo iconsur set "/Users/kodydeda/Applications/Brave Browser Apps.localized/JIRA.app/" -k 'Jira Cloud by Atlassian'
 sudo iconsur set "/Users/kodydeda/Applications/Brave Browser Apps.localized/YouTube.app/"
 
 sudo iconsur cache
