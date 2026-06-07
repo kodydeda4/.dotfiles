@@ -1,0 +1,29 @@
+[flavor]
+# dark = "onedark"
+dark = "tokyo-night"
+light = "catppuccin-latte"
+# dark = "moonfly"
+# dark = "nightfly"
+
+[icon]
+prepend_dirs = [
+  { name = "kodydeda", text = "" },
+  { name = "Applications", text = "󰕰"},
+  { name = "Developer", text = "󰣪" },
+  { name = "Downloads", text = "" },
+  { name = "Pictures", text = "" },
+  { name = "Music", text = "󰝚" },
+]
+
+[mgr]
+border_symbol = "│"
+border_style  = { fg = "#3b4261" }
+
+[manager]
+border_symbol = "┃"
+# border_symbol = "│"
+border_style  = { fg = "#7aa2f7" }
+
+[status]
+separator_open  = ""
+separator_close = ""
