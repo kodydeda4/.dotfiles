@@ -1,0 +1,38 @@
+#!/bin/bash
+# Usage: ./yt-art.sh "<YOUTUBE_URL>"
+
+set -euo pipefail
+
+URL="${1:-}"
+[[ -z "$URL" ]] && { echo "Usage: $0 <YouTube URL>"; exit 1; }
+
+# 1) Get video title
+TITLE="$(yt-dlp --no-playlist --print "%(title)s" "$URL" | head -n1)"
+
+# 2) Light cleanup of common clutter in titles
+CLEAN="$(printf '%s' "$TITLE" \
+  | sed -E 's/\[[^]]*\]//g; s/\([^)]*\)//g; s/[[:space:]]+/ /g; s/ - [Oo]fficial.*$//; s/[\"“”]//g; s/[[:space:]]+$//; s/^[[:space:]]+//')"
+
+# 3) URL-encode query
+Q="$(jq -rn --arg s "$CLEAN" '$s|@uri')"
+
+# 4) Query iTunes (try albums+songs, pick first result)
+JSON="$(curl -fsSL "https://itunes.apple.com/search?term=${Q}&media=music&entity=album,song&limit=1")"
+ART_URL="$(printf '%s' "$JSON" | jq -r '.results[0].artworkUrl100 // empty')"
+
+if [[ -z "$ART_URL" || "$ART_URL" == "null" ]]; then
+  echo "No artwork found for: $CLEAN"
+  exit 2
+fi
+
+# 5) Upscale to 1000x1000 when possible
+HIRES="$(printf '%s' "$ART_URL" | sed -E 's/[0-9]+x[0-9]+bb/1000x1000bb/')"
+
+# 6) Sanitize filename and download
+SAFE_NAME="$(printf '%s' "$CLEAN" | tr '/:' '__')"
+OUT="$HOME/Music/Downloads/Artwork/${SAFE_NAME}.jpg"
+
+curl -fL "$HIRES" -o "$OUT" || { echo "Download failed"; exit 3; }
+
+echo "Saved artwork:"
+echo "$OUT"

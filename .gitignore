@@ -1,0 +1,8 @@
+config/github-copilot/apps.json
+.DS_Store
+config/mpd/database
+config/mpd/mpd.log
+config/mpd/mpd/database
+config/mpd/mpd/log
+config/mpd/mpd/mpd.log
+config/mpd/mpd/state
