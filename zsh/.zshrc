@@ -14,7 +14,14 @@ fastfetch --logo small
 # Github - Display Current
 # echo "$(gh api user -q .login) | switch with ghs"
 
-# fzf
+#========================================================================
+# Music Player Daemon (mpd)
+#========================================================================
+pgrep -x mpd > /dev/null || mpd ~/.config/mpd/mpd/mpd.conf &> /dev/null
+
+#========================================================================
+# Fuzzy File Search (fzf)
+#========================================================================
 eval "$(fzf --zsh)"
 
 # ruby env

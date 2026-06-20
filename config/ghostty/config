@@ -1,7 +1,7 @@
 # ghostty.
 # theme = dark:oled-rose-pine,light:catppuccin-latte.conf
-# theme = dark:atom-one-dark-oled.conf, light:catppuccin-latte.conf
-theme = dark:TokyoNight, light:TokyoNight Day
+theme = dark:atom-one-dark-oled.conf, light:catppuccin-latte.conf
+# theme = dark:TokyoNight, light:TokyoNight Day
 
 font-family = MesloLGS NF
 font-size = 14
