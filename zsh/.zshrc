@@ -54,7 +54,7 @@ fi
 #========================================================================
 
 # general
-alias conf="cd ~/.dotfiles/config/; nvim ."
+alias conf="cd ~/Developer/kody/dotfiles/config/; nvim ."
 alias h="history"
 alias cd="z"
 alias ci="zi"
@@ -85,7 +85,7 @@ alias mus="rmpc"
 # alias youtube-dl="youtube-dl"
 alias youtube-music-dl="ytmdl"
 alias tidal-dl="cd; tidal-dl"
-alias tidal-dl-converter="~/.dotfiles/scripts/tidal-dl-converter"
+alias tidal-dl-converter="~/Developer/kody/dotfiles/scripts/tidal-dl-converter"
 
 
 # git
@@ -100,10 +100,10 @@ alias sw="cd ~/Developer/kody/swift; r"
 alias web="cd ~/Developer/kody/web; r"
 
 ## scripts
-alias sss="~/.dotfiles/scripts/sss"
-alias fpr="~/.dotfiles/scripts/fpr"
-alias xcm="~/.dotfiles/scripts/xcm"
-alias icons="sudo -H ~/.dotfiles/scripts/icons"
+alias sss="~/Developer/kody/dotfiles/scripts/sss"
+alias fpr="~/Developer/kody/dotfiles/scripts/fpr"
+alias xcm="~/Developer/kody/dotfiles/scripts/xcm"
+alias icons="sudo -H ~/Developer/kody/dotfiles/scripts/icons"
 
 #========================================================================
 # zoxide

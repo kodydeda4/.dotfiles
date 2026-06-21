@@ -1,17 +1,5 @@
 #!/bin/bash
 
 # SwiftFormat
-
-# swiftformat ~/Developer/kody/swift/swift-camera-app
-# swiftformat ~/Developer/pocketradar/ios-sports-app
-# swiftformat ~/Developer/pocketradar/sports
-# swiftformat ~/Developer/kody/swift/swift-fitness-app
 swiftformat ~/Developer/foresightcares/swift-ava-app
-swiftformat ~/Developer/foresightcares/swift-ava-apps
-#swiftformat ~/Developer/foresightcares/AVA-TCA-Demo
-swiftformat ~/Developer/kody/swift/swift-music-app
-swiftformat ~/Developer/kody/swift/swift-music-app-v2
-swiftformat ~/Developer/kody/swift/swift-habit-tracker
-swiftformat ~/Developer/kody/swift/swift-calorie-tracker
-
-# swiftformat ~/Developer/foresightcares/FSC_Native_iOS
+swiftformat ~/Developer/kody/swift/music-player
