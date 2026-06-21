@@ -1,5 +1,3 @@
-My dotfiles.
-
 ## Helpers
 
 ```bash
