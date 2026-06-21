@@ -5,7 +5,7 @@ My dotfiles.
 ```bash
 # git clone
 git clone https://github.com/kodydeda4/dotfiles
-cd ~/dotfiles
+cd dotfiles
 
 # GNU Stow "config" into `~/.config`
 stow config --target="$HOME/.config"
