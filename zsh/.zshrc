@@ -17,7 +17,8 @@ fastfetch --logo small
 #========================================================================
 # Music Player Daemon (mpd)
 #========================================================================
-pgrep -x mpd > /dev/null || mpd ~/.config/mpd/mpd/mpd.conf &> /dev/null
+alias mpd_start="pgrep -x mpd > /dev/null || mpd ~/.config/mpd/mpd/mpd.conf &> /dev/null"
+mpd_start
 
 #========================================================================
 # Fuzzy File Search (fzf)
@@ -67,7 +68,7 @@ alias pp="neofetch"
 alias tt="smassh"
 alias xwal="/opt/xcwal/; python3 xcwal.py"
 alias bonsai="cbonsai --seed 119 --live"
-alias fixaudio="sudo killall coreaudiod"
+alias fixaudio="sudo killall coreaudiod; killall mpd; mpd_start"
 
 # apps
 alias gg="lazygit"
