@@ -134,7 +134,7 @@ youtube-dl() {
   yt-dlp -f bestaudio \
     --extract-audio --audio-format m4a --audio-quality 0 \
     --embed-metadata --embed-thumbnail --convert-thumbnails jpg \
-    -o "$HOME/Music/Downloads/youtube-dl/%(playlist_title,NA)s/%(track_number,00)02d - %(title)s.%(ext)s" "$1"
+    -o "$HOME/Music/Music/Music/Downloads/youtube-dl/%(playlist_title,NA)s/%(track_number,00)02d - %(title)s.%(ext)s" "$1"
 }
 
 #========================================================================
