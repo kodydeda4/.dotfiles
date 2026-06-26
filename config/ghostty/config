@@ -4,7 +4,7 @@ theme = dark:atom-one-dark-oled.conf, light:catppuccin-latte.conf
 # theme = dark:TokyoNight, light:TokyoNight Day
 
 font-family = MesloLGS NF
-font-size = 14
+font-size = 20
 # background-opacity = 1
 background-opacity = 0.95
 # background-blur-radius = 20
